@@ -1,0 +1,1 @@
+This repository is created to track my progress for the tasks of the subject Artificial Intelligence Lab. We are assigned a task each week. The deadline for 1st 7 tasks is before the mids exam while the deadline for the next 7 task is before finals. This will be a nice experience for me to learn skills and track my progress in the field of Artificial Intelligence. 
