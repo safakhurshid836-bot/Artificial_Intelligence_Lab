@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Exoplanet Predictor</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Exoplanet Predictor</h1>
+
+        <form action="/predict" method="POST">
+
+            <input type="number" step="any"
+                   name="koi_period"
+                   placeholder="Orbital Period" required>
+
+            <input type="number" step="any"
+                   name="koi_duration"
+                   placeholder="Transit Duration" required>
+
+            <input type="number" step="any"
+                   name="koi_depth"
+                   placeholder="Transit Depth" required>
+
+            <input type="number" step="any"
+                   name="koi_prad"
+                   placeholder="Planet Radius" required>
+
+            <input type="number" step="any"
+                   name="koi_teq"
+                   placeholder="Equilibrium Temperature" required>
+
+            <input type="number" step="any"
+                   name="koi_insol"
+                   placeholder="Insolation Flux" required>
+
+            <input type="number" step="any"
+                   name="koi_model_snr"
+                   placeholder="Signal-to-Noise Ratio" required>
+
+            <input type="number" step="any"
+                   name="koi_steff"
+                   placeholder="Stellar Temperature" required>
+
+            <input type="number" step="any"
+                   name="koi_slogg"
+                   placeholder="Surface Gravity" required>
+
+            <input type="number" step="any"
+                   name="koi_srad"
+                   placeholder="Stellar Radius" required>
+
+            <input type="number" step="any"
+                   name="koi_kepmag"
+                   placeholder="Kepler Magnitude" required>
+
+            <button type="submit">
+                Predict
+            </button>
+
+        </form>
+
+        <h2>
+            {{ prediction_text }}
+        </h2>
+
+    </div>
+
+</body>
+</html>
